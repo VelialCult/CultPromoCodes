@@ -1,0 +1,10 @@
+main: ru.velialcult.promocodes.CultPromoCodes
+api-version: 1.16
+version: '${project.version}'
+name: CultPromoCodes
+website: https://vk.com/velialcultstudio
+depend:
+  - CultLibrary
+commands:
+  promocode:
+  cultpromocodes:

@@ -1,0 +1,16 @@
+promocodes:
+  test:
+    commands:
+      - 'eco give {player} 500'
+      - 'kick {player}'
+    maxUsages: 1
+    maxUsagesPerPlayer: 1
+    cooldown: 1m
+  timed:
+    commands:
+      - 'kick {player}'
+    maxUsages: 1
+    maxUsagesPerPlayer: 1
+    cooldown: 1m
+    timed: true
+    timeToDeletePromoCode: 1h

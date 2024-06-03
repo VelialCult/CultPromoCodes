@@ -1,0 +1,8 @@
+settings:
+  database:
+    type: "sqlite" # Mysql, sqlite
+    mysql:
+      host: "host"
+      database: "database"
+      username: "username"
+      password: "pass"
