@@ -10,6 +10,7 @@ import ru.velialcult.library.java.database.DataBaseType;
 import ru.velialcult.promocodes.command.PromoCodeCommand;
 import ru.velialcult.promocodes.file.MessagesFile;
 import ru.velialcult.promocodes.service.PromoCodeService;
+import ru.velialcult.promocodes.update.UpdateChecker;
 
 /**
  * Written by Nilsson
@@ -31,6 +32,9 @@ public class CultPromoCodes extends JavaPlugin {
         long mills = System.currentTimeMillis();
 
         try {
+
+            UpdateChecker updateChecker = new UpdateChecker(this);
+            updateChecker.check();
 
             loadConfigurations();
 
