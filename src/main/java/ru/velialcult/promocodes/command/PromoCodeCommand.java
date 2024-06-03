@@ -74,7 +74,7 @@ public class PromoCodeCommand implements CommandExecutor {
 
                 promoCodeService.usePromoCode(player, promoCodeKey);
                 VersionAdapter.MessageUtils().sendMessage(sender, messagesFile.getFileOperations().getString("messages.commands.promocode.use",
-                                                                                                             new ReplaceData("{core}", promoCodeKey)));
+                                                                                                             new ReplaceData("{code}", promoCodeKey)));
             }
             return true;
         }

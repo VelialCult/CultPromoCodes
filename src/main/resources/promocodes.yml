@@ -1,16 +1,16 @@
 promocodes:
-  test:
-    commands:
+  test: # Должен быть уникальным, именно введя данный ключ игрок использует промокод
+    commands: # Команды, которые будут выполнятсья во время использования прокомода
       - 'eco give {player} 500'
-      - 'kick {player}'
-    maxUsages: 1
-    maxUsagesPerPlayer: 1
-    cooldown: 1m
-  timed:
-    commands:
-      - 'kick {player}'
-    maxUsages: 1
-    maxUsagesPerPlayer: 1
-    cooldown: 1m
-    timed: true
-    timeToDeletePromoCode: 1h
+    message: # Сообщение, которое игроку будет отправлено во время использования промокода
+      - ''
+      - '&c&lCultPromoCodes &8| &aПоздравляем!'
+      - '&fВы успешно использовали промокода от &4Nilsson'
+      - '&fБыло получено: '
+      - ' &8- &e500 &fмонеток'
+      - ''
+    maxUsages: 100 # Количество общих использований
+    maxUsagesPerPlayer: 1 # Сколько раз может использовать один игрок
+    cooldown: 10m # Куладун на следующее использование данного промокода
+    timed: false # Должен ли промокод автоматически удаляться через некоторое время
+    timeToDeletePromoCode: 1H # Время, через которое промокод должен удалиться
